@@ -27,6 +27,88 @@ body, html{
     color: #ffffff;
     text-shadow: 1px 1px black;
 }
-.btnbtn-warning{
+.btn.btn-light{
+    margin-top: 15px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    color: rgb(5, 5, 5);
+
+}
+.display-5{
+ color: black;
+ text-shadow: black;
+ margin: right 15px;
+
+}
+
+.lead1{
+    color: rgb(63, 63, 63);
+
+}
+.display-6{
+    font-size: 150%;
+    margin-top: 15px;
+color: black;
+font-family: 'Poppins', sans-serif;
+}
+.display-7{
+    font-size: 160%;
+    margin-top: 15px;
     color: black;
+    font-family: 'Poppins', sans-serif;
+}
+.display-8{
+    font-size: 150%;
+    margin-top: 15px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+main.cards{
+    display: flex;  
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #434343;
+    margin-left: 20px;
+}
+
+main.cards section.cards{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding: 64px 50px;
+    border-radius: 8px;
+    max-height: 256px;
+   
+}
+
+main.cards section.cards :first-child{
+    margin-left: 0;
+}
+main.cards section.cards .icon{
+    width: 64px;
+    height: 64px;
+
+}
+main.cards section.cards img{
+width: 100%;
+}
+
+@media screen and (max-width: 720px) {
+    main.cards{
+        flex-direction: column;
+    }
+    main.cards section.cards{
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+}
+
+main.cards section.card:last-child{
+    margin-bottom: 0;
 }
