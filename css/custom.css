@@ -8,7 +8,7 @@ body, html{
 
 .container-fluid{
     text-align: center;
-    
+    margin-right: 62px;
 }
 
 .jumbotron-with-background {
@@ -38,40 +38,49 @@ body, html{
 .display-5{
  color: black;
  text-shadow: black;
- margin: right 15px;
+ 
 
 }
 
 .lead1{
     color: rgb(63, 63, 63);
-
+    font-family: 'Poppins', sans-serif;
 }
 .display-6{
     font-size: 150%;
     margin-top: 15px;
 color: black;
-font-family: 'Poppins', sans-serif;
+font-family: 'Bebas Neue', cursive;
+}
+.descrição{
+    font-family: 'Poppins', sans-serif;
 }
 .display-7{
     font-size: 160%;
     margin-top: 15px;
     color: black;
+    font-family: 'Bebas Neue', cursive;
+}
+.descrição2{
     font-family: 'Poppins', sans-serif;
 }
 .display-8{
     font-size: 150%;
     margin-top: 15px;
     color: black;
+    font-family: 'Bebas Neue', cursive; 
+}
+.descrição3{
     font-family: 'Poppins', sans-serif;
 }
-
 main.cards{
-    display: flex;  
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     color: #434343;
-    margin-left: 20px;
+    margin-left: 50px;
+    margin-right: 30px;
 }
 
 main.cards section.cards{
@@ -83,7 +92,8 @@ main.cards section.cards{
     background-color: white;
     padding: 64px 50px;
     border-radius: 8px;
-    max-height: 256px;
+    max-height: 270px;
+    margin-left: 15px;
    
 }
 
@@ -111,4 +121,198 @@ width: 100%;
 
 main.cards section.card:last-child{
     margin-bottom: 0;
+}
+
+.display-9{
+    margin-top: 100px;
+}
+.lead2{
+    font-family: 'Poppins', sans-serif;
+}
+
+main.cards2{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    color: #434343;
+    margin-right: 15px;
+}
+.cards2{
+    flex: 1 0 30%;
+    min-height: 33.33vh;
+}
+main.cards2 section.cards2{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 20px;
+    background-color: white;
+    padding: 32px 50px;
+    max-height: 310px;
+    border-radius: 5px;
+    box-shadow: 30px 30px 30px -50px;
+    
+   
+}
+
+main.cards2 section.cards2 :first-child{
+    margin-left: 0;
+}
+main.cards2 section.cards2 .icon2{
+    width: 250px;
+    height: 200px;
+
+}
+
+main.cards2 section.cards2 img{
+    width: 100%;
+}
+
+@media screen and (max-width: 720px) {
+    main.cards2{
+        flex-direction: column;
+    }
+    main.cards2 section.cards2{
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat";
+}
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  background-color: rgb(255, 255, 255);
+}
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline ul {
+  list-style: none;
+}
+.timeline ul li {
+  padding: 20px;
+  background-color: #98aaec;
+  color: rgb(8, 8, 8);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.timeline ul li:last-child {
+  margin-bottom: 0;
+}
+.timeline-content h1 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.timeline-content p {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+}
+.timeline-content .date {
+  font-size: 12px;
+  font-weight: 300;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+@media only screen and (min-width: 768px) {
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: gray;
+  }
+  .timeline ul li {
+    width: 50%;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    padding: 0px 50px;
+    clear: right;
+    transform: translateX(-30px);
+    border-radius: 20px 0px 20px 20px;
+  }
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+    border-radius: 0px 20px 20px 20px;
+  }
+  .timeline ul li::before {
+    content: "";
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    top: 0px;
+    border: 4px solid #ffffff;
+  }
+  .timeline ul li:nth-child(1)::before {
+    transform: translate(50%, -50%);
+    right: -30px;
+    background-image: url(../imagens/adidas.png);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .timeline ul li:nth-child(2)::before {
+    transform: translate(-50%, -50%);
+    left: -30px;
+    background-image: url(../imagens/nike.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .timeline ul li:nth-child(3)::before {
+    transform: translate(50%, -50%);
+    right: -30px;
+    background-image: url(../imagens/bk.png);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .timeline ul li:nth-child(4)::before {
+    transform: translate(50%, -50%);
+    left: -150px;
+    background-image: url(../imagens/jbl.png);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .timeline-content .date {
+    position: absolute;
+    top: -30px;
+  }
+  .timeline ul li:hover::before {
+    background-color: aqua;
+  }
 }
