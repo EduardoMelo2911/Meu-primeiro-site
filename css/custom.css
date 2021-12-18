@@ -1,14 +1,15 @@
 body, html{
-    font-family: 'Lobster', cursive;
+
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
+
 }
 
 .container-fluid{
     text-align: center;
-    margin-right: 62px;
+
 }
 
 .jumbotron-with-background {
@@ -16,35 +17,53 @@ body, html{
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: -50px;
+}
+
+.navbar-custom{
+  background-color: transparent !important;
+}
+
+.navbar-brand{
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 12px;
 }
 
 .display-4{
+  font-weight: bold;
     color: #ffffff;
-    text-shadow: 1px 1px black;
+    text-shadow: 2px 2px black;
+    
 }
 
 .lead{
+  font-weight: normal;
     color: #ffffff;
-    text-shadow: 1px 1px black;
+    text-shadow: 2px 2px black;
 }
-.btn.btn-light{
+.botao{
     margin-top: 15px;
     border-radius: 10px;
-    border: 0;
+    border: 1px;
     cursor: pointer;
-    color: rgb(5, 5, 5);
+    color: #ffffff;
+    background:linear-gradient( to right,#2c698d,#272643) ;
+    width: 110px;
+    height: 30px;
 
 }
 .display-5{
+  font-weight: bold;
  color: black;
  text-shadow: black;
- 
-
+ position: relative;
+left: -10px;
 }
 
 .lead1{
     color: rgb(63, 63, 63);
-    font-family: 'Poppins', sans-serif;
+    
 }
 .display-6{
     font-size: 150%;
@@ -52,35 +71,28 @@ body, html{
 color: black;
 font-family: 'Bebas Neue', cursive;
 }
-.descrição{
-    font-family: 'Poppins', sans-serif;
-}
+
 .display-7{
     font-size: 160%;
     margin-top: 15px;
     color: black;
     font-family: 'Bebas Neue', cursive;
 }
-.descrição2{
-    font-family: 'Poppins', sans-serif;
-}
+
 .display-8{
     font-size: 150%;
     margin-top: 15px;
     color: black;
     font-family: 'Bebas Neue', cursive; 
 }
-.descrição3{
-    font-family: 'Poppins', sans-serif;
-}
+
 main.cards{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     color: #434343;
-    margin-left: 50px;
-    margin-right: 30px;
+
 }
 
 main.cards section.cards{
@@ -90,19 +102,20 @@ main.cards section.cards{
     align-items: center;
     text-align: center;
     background-color: white;
-    padding: 64px 50px;
+    padding: 70px 50px;
     border-radius: 8px;
-    max-height: 270px;
-    margin-left: 15px;
+    max-height: 290px;
+    max-width: 340px;
+    margin-left: -25px;
    
 }
 
 main.cards section.cards :first-child{
-    margin-left: 0;
+    margin-left: 0px;
 }
 main.cards section.cards .icon{
-    width: 64px;
-    height: 64px;
+    width: 80px;
+    height: 80px;
 
 }
 main.cards section.cards img{
@@ -124,10 +137,15 @@ main.cards section.card:last-child{
 }
 
 .display-9{
+  font-weight: bold;
     margin-top: 100px;
+    color: black;
+    text-align: center;
+    
 }
 .lead2{
     font-family: 'Poppins', sans-serif;
+    text-align: center;
 }
 
 main.cards2{
@@ -187,9 +205,7 @@ main.cards2 section.cards2 img{
   padding: 0;
   box-sizing: border-box;
 }
-html {
-  font-family: "Montserrat";
-}
+
 .container {
   min-height: 100vh;
   width: 100%;
@@ -199,6 +215,7 @@ html {
   padding: 100px 0;
   background-color: rgb(255, 255, 255);
 }
+
 .timeline {
   width: 80%;
   height: auto;
@@ -212,7 +229,7 @@ html {
 }
 .timeline ul li {
   padding: 20px;
-  background-color: #98aaec;
+  background-color: #e3f6f5;
   color: rgb(8, 8, 8);
   border-radius: 10px;
   margin-bottom: 20px;
@@ -225,11 +242,12 @@ html {
   font-size: 25px;
   line-height: 30px;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 .timeline-content p {
   font-size: 16px;
   line-height: 30px;
-  font-weight: 300;
+  font-weight: 400;
 }
 .timeline-content .date {
   font-size: 12px;
@@ -270,8 +288,8 @@ html {
   .timeline ul li::before {
     content: "";
     position: absolute;
-    height: 120px;
-    width: 120px;
+    height: 130px;
+    width: 130px;
     border-radius: 50%;
     top: 0px;
     border: 4px solid #ffffff;
@@ -279,7 +297,7 @@ html {
   .timeline ul li:nth-child(1)::before {
     transform: translate(50%, -50%);
     right: -30px;
-    background-image: url(../imagens/adidas.png);
+    background-image: url(../imagens/icone.png);
     background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -287,7 +305,7 @@ html {
   .timeline ul li:nth-child(2)::before {
     transform: translate(-50%, -50%);
     left: -30px;
-    background-image: url(../imagens/nike.jpg);
+    background-image: url(../imagens/uber1.jpg);
     background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -295,7 +313,7 @@ html {
   .timeline ul li:nth-child(3)::before {
     transform: translate(50%, -50%);
     right: -30px;
-    background-image: url(../imagens/bk.png);
+    background-image: url(../imagens/apple.jpg);
     background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -316,3 +334,4 @@ html {
     background-color: aqua;
   }
 }
+
