@@ -321,7 +321,7 @@ main.cards2 section.cards2 img{
   .timeline ul li:nth-child(4)::before {
     transform: translate(50%, -50%);
     left: -150px;
-    background-image: url(../imagens/jbl.png);
+    background-image: url(../imagens/condominio.png);
     background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -331,7 +331,7 @@ main.cards2 section.cards2 img{
     top: -30px;
   }
   .timeline ul li:hover::before {
-    background-color: aqua;
+    background-color: rgb(253, 253, 253);
   }
 }
 
